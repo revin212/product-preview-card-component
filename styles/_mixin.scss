@@ -1,0 +1,15 @@
+@mixin flex-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin font-1{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+@mixin font-2($weight){
+    font-family: "Montserrat", sans-serif;
+    font-weight: $weight;
+}

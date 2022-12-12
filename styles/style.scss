@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
-@import url(./var);
-@import url(./_mixin);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import "./var";
+@import "./mixin";
 
 
 body{
     background-color: $cream;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     @include flex-center();
 }
 
@@ -20,11 +19,11 @@ body{
     overflow: hidden;
 }
 .desc-wrapper {
-    margin: 5% 8%;
+    margin: 1.2rem 8%;
     h1{
         @include font-1();
         line-height: 1.8rem;
-        margin: 0.7rem 0;
+        margin: 1rem 0;
         color: $very-dark-blue;
     }
     p{
@@ -33,12 +32,12 @@ body{
     }
     .perfume{
         letter-spacing: 5px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .desc{
         line-height: 1.3rem;
-        letter-spacing: 0.05rem;
-        font-size: 12px;
+        // letter-spacing: 0.05rem;
+        font-size: 14px;
     }
     .price{
         display: flex;
@@ -48,7 +47,7 @@ body{
         .discount-price{
             @include font-1();
             color: $dark-cyan;
-            font-size: 1.7rem;
+            font-size: 2rem;
             margin-right: 1rem;
         }
         .default-price{
@@ -103,10 +102,9 @@ body{
     .container{
         flex-direction: row;
         max-width: 600px;
-        max-height: 420px;
     }
     .desc-wrapper{
-        margin: 0 5%;
+        margin: 0 1.8rem;
         height: 420px;
         h1{
             margin: 1.6rem 0;
